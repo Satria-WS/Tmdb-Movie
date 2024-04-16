@@ -5,7 +5,7 @@ import FormSearch from './FormSearch';
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-pink-400 shadow-lg pb-10">
       <div className="container mx-auto">
         <div className="flex items-center justify-between py-4">
           <Link href="/">
@@ -16,7 +16,7 @@ export default function Navbar() {
           </Link>
           <div className="flex items-center space-x-4">
             <ButtonTheme />
-            <ButtonToggler />
+            {/* <ButtonToggler /> */}
           </div>
         </div>
         <div className="block lg:hidden">
@@ -26,12 +26,12 @@ export default function Navbar() {
           <ul className="flex items-center space-x-6">
             <li>
               <Link href="/">
-                <span className="text-gray-600 hover:text-gray-900">Home</span>
+                <span className="text-white shadow-md hover:shadow-xl">Home</span>
               </Link>
             </li>
             <li>
               <Link href="/about-us">
-                <span className="text-gray-600 hover:text-gray-900">About Us</span>
+                <span className="text-white shadow-md hover:shadow-xl">About Us</span>
               </Link>
             </li>
           </ul>
